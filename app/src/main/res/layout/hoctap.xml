@@ -1,0 +1,208 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/anh1">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Quay Lại"
+            android:id="@+id/back_to_home"
+            android:background="#ED3473"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:weightSum="8"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Giới Hạn Kết quả"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/gioi_han"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    android:text="100"></EditText>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/dieu_chinh"
+                    android:text="Điều Chỉnh">
+
+                </Button>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Chọn đáp án đúng:"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="@color/black">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="18*14"
+                android:textSize="25dp"
+                android:id="@+id/pheptinh"
+                android:textColor="#ED5252"
+                android:gravity="center"
+                android:layout_weight="1">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/A"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:text="242">
+
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="252"
+                    android:id="@+id/B"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/C"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:text="262">
+
+                </Button>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="272"
+                    android:textSize="20dp"
+                    android:id="@+id/D"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/test"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ED3473"
+                    android:text="Test">
+
+                </Button>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="25dp"
+                    android:id="@+id/thong_bao_kq"
+                    android:layout_weight="1"
+                    android:textColor="#E6409C"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    >
+
+                </TextView>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Next"
+                    android:textSize="20dp"
+                    android:id="@+id/next"
+                    android:backgroundTint="#ED3473"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                </Button>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

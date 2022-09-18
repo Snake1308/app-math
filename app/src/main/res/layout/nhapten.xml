@@ -1,0 +1,83 @@
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/trangchu"
+    android:weightSum="1"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:weightSum="7"
+        android:orientation="vertical"
+
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Quay Lại"
+            android:id="@+id/home1"
+            android:background="#DD5080"
+            android:layout_height="wrap_content">
+
+        </Button>
+    <TextView
+        android:background="#FF69B4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Nhập vào tên của ban"
+        android:textSize="30dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:layout_weight="1"></TextView>
+    <EditText
+
+        android:layout_margin="30dp"
+        android:hint="Tên của bạn là gì ?"
+        android:id="@+id/ten"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></EditText>
+    <TextView
+        android:background="#FF69B4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Nhập vào giới hạn bài test"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:layout_weight="1"></TextView>
+    <EditText
+        android:layout_margin="30dp"
+        android:hint="Giới hạn phép tính của bạn là ?"
+        android:id="@+id/gioi_han_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </EditText>
+    <Button
+        android:layout_weight="1"
+        android:background="#DF316C"
+        android:id="@+id/dong_y"
+        android:text="Đồng Ý"
+        android:textSize="40dp"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></Button>
+        <Button
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:id="@+id/bangxh"
+            android:text="Bảng Xếp Hạng"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></Button>
+    </LinearLayout>
+</LinearLayout>

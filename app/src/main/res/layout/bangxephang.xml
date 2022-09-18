@@ -1,0 +1,76 @@
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:androidx.recyclerview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bangdiem2"
+    android:weightSum="9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BẢNG XẾP HẠNG"
+            android:textSize="40dp"
+            android:textColor="#AB19BF"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcc_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:backgroundTint="@color/white"
+        android:padding="8dp"
+        androidx.recyclerview:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:text="Tiếp tục"
+            android:textSize="20dp"
+            android:id="@+id/tieptup"
+            android:background="#FF69B4"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:text="Trang chủ"
+            android:textSize="20dp"
+            android:id="@+id/mainactivity"
+            android:background="#FF69B4"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+        </Button>
+
+
+    </LinearLayout>
+</LinearLayout>
